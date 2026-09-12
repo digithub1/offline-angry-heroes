@@ -50,7 +50,7 @@
 "use strict";{const t="localstorage",s=class extends self.DOMHandler{constructor(s){super(s,t),this.AddRuntimeMessageHandlers([["init",()=>this._Init()],["request-persistent",()=>this._OnRequestPersistent()]])}async _Init(){let t=!1;try{t=await navigator["storage"]["persisted"]()}catch(s){t=!1,console.warn("[Construct] Error checking storage persisted state: ",s)}return{"isPersistent":t}}async _OnRequestPersistent(){try{return{"isOk":!0,"isPersistent":await navigator["storage"]["persist"]()}}catch(t){return console.error("[Construct] Error requesting persistent storage: ",t),{"isOk":!1}}}};self.RuntimeInterface.AddDOMHandlerClass(s)}
 
 // scripts/plugins/Azerion_Integration_SDK/c3runtime/azerion-integration-libs.js
-var _azerionIntegration={"gdId":"5d513da2cf424e5e907b734848a3ec5d","rtgEnabled":false,"lbEnabled":false,"fbType":"dummy","alxType":"none","advType":"gd","af":false,"sa":false,"la":true,"bd":8,"playBtn":true,"cp":false,"build":{"version":"fix-this","timeStamp":1738588504820,"h":"e9fe52a"},"p":"gd","lng":null,"gmoEnabled":false,"gameTitle":"DEBUG_TITLE"};/******/ (() => { // webpackBootstrap
+window._azerionIntegration=globalThis._azerionIntegration={"gdId":"5d513da2cf424e5e907b734848a3ec5d","rtgEnabled":false,"lbEnabled":false,"fbType":"dummy","alxType":"none","advType":"gd","af":false,"sa":false,"la":true,"bd":8,"playBtn":true,"cp":false,"build":{"version":"fix-this","timeStamp":1738588504820,"h":"e9fe52a"},"p":"gd","lng":null,"gmoEnabled":false,"gameTitle":"DEBUG_TITLE"};/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 34:
